@@ -5,7 +5,7 @@ module github.com/dell/csi-vxflexos/v2
 
 replace github.com/dell/gofsutil => ./version/gofsutil
 
-replace github.com/dell/goscaleio => ./goscaleio
+replace github.com/dell/goscaleio => ./version/goscaleio
 
 //replace github.com/dell/gocsi => ./gocsi
 
