@@ -32,12 +32,10 @@ jobs:
     steps:
       - name: Checkout the code
         uses: actions/checkout@v2
-        with:          
-          ref: v2.9.3
       - name: Run Go Security
-        uses: securego/gosec@v2.9.3
+        uses: securego/gosec@master
         with:
-          args: -exclude=G304 ./...
+          args: -exclude=G304 ./... -buildvcs=false
   malware_security_scan:
     name: Malware Scanner
     runs-on: ubuntu-latest
