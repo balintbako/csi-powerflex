@@ -32,6 +32,8 @@ jobs:
     steps:
       - name: Checkout the code
         uses: actions/checkout@v2
+        with:          
+          ref: v2.11.0
       - name: Run Go Security
         uses: securego/gosec@v2.11.0
         with:
