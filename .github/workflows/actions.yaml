@@ -1,9 +1,9 @@
 name: Workflow
 on:
   push:
-    branches: [ main ]
+    branches: [ add-current-gofsutil ]
   pull_request:
-    branches: [ main ]
+    branches: [ add-current-gofsutil ]
 jobs:
   code-check:
     name: Check Go formatting, linting, vetting
