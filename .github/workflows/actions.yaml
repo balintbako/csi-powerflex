@@ -33,7 +33,7 @@ jobs:
       - name: Checkout the code
         uses: actions/checkout@v2
       - name: Run Go Security
-        uses: securego/gosec@add-current-gofsutil
+        uses: securego/gosec@v2.11.0
         with:
           args: -exclude=G304 ./...
   malware_security_scan:
