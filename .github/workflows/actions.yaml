@@ -28,7 +28,7 @@ jobs:
           test-folder: "./service"
   go_security_scan:
     name: Go security
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-18.04
     steps:
       - name: Checkout the code
         uses: actions/checkout@v2
